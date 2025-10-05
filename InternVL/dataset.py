@@ -46,7 +46,7 @@ IMAGE_TOKEN_MAX_LENGTH = {
 
 
 class ExpertMergingDataset(Dataset):
-    """Dataset for ExpertMerging training using annotated samples"""
+    """Dataset for ExpertMerging training using samples"""
 
     def __init__(
         self, data_dir: str, samples_per_task=None, default_samples_per_task: int = 100, image_size: int = 448
@@ -55,7 +55,7 @@ class ExpertMergingDataset(Dataset):
         Initialize ExpertMerging dataset
 
         Args:
-            data_dir: Directory containing annotated JSON files
+            data_dir: Directory containing JSON files
             samples_per_task: Number of samples to use per task (int for all tasks, 
                             dict for per-task samples, None for all samples)
             default_samples_per_task: Default number of samples per task when not specified

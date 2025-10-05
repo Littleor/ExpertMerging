@@ -1063,7 +1063,7 @@ def expert_merging_merging(
         tokenizer: Tokenizer for the models
         logger: Logger instance
         exclude_param_names_regex: Regex patterns for parameters to exclude from merging
-        data_dir: Directory containing annotated JSON files
+        data_dir: Directory containing JSON files
         samples_per_task: Number of samples to use per task
         default_samples_per_task: Default number of samples per task if not specified
         num_epochs: Number of training epochs
@@ -1145,7 +1145,7 @@ def merge_models(
     exclude_param_names_regex=None,
     logger=None,
     # ExpertMerging-specific parameters
-    data_dir="../samples/Annotated",
+    data_dir="../dataset",
     samples_per_task=None,
     default_samples_per_task: int = 100,
     num_epochs=1,
@@ -1706,8 +1706,8 @@ def parse_args():
     parser.add_argument(
         "--data_dir",
         type=str,
-        default="../samples/Annotated",
-        help="Directory containing annotated JSON files for ExpertMerging",
+        default="../dataset",
+        help="Directory containing JSON files for ExpertMerging",
     )
     parser.add_argument(
         "--samples_per_task",
