@@ -1,0 +1,46 @@
+InternVL/data
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+.env/
+
+# Local environment + secrets
+.env
+.env.local
+
+# Editor settings
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Logs and run artifacts
+logs/
+*.log
+results/
+
+# Model weights and large binaries
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Hugging Face caches
+.cache/
+*/.cache/
+
+datasets/
+
+# PyTorch Lightning / other checkpoints
+lightning_logs/
+checkpoints/
+
+# Temporary files
+*.tmp
+*.bak
