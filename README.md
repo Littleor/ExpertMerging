@@ -31,7 +31,7 @@ Follow the checkpoint download guide from [WalkerWorldPeace/MLLMerging](https://
 In our implementation, we use a JSON-formatted dataset for training. 
 To create the dataset, make a directory (e.g., `dataset/`) and add one JSON file per task (`${task_name}.json`). Each file should contain a list of objects with the following fields:
 
-```json
+```jsonc
 [
   {
     "image_path": "path/to/image.jpg", // absolute or relative path
